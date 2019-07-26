@@ -6,10 +6,10 @@ export default class LoginComponent extends React.Component{
     super()
   }
   render(){
-    var bgImg = require("../static/img/1.jpg")
+    // var bgImg = require("../static/img/1.jpg")
     return (
       <div className={styles.logonContainer}>
-        <img src={bgImg} alt="" className={styles.bgImg}/>
+        {/* <img src={bgImg} alt="" className={styles.bgImg}/> */}
           <div className={styles.loginForm}>
               <p>
                 <label htmlFor="user">用户名</label>

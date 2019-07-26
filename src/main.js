@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import LoginComponent from './view/login';
+import WelcomeComponent from './view/welcome.jsx';
 
-ReactDOM.render(<LoginComponent />,document.getElementById('root'))
+ReactDOM.render(<WelcomeComponent />,document.getElementById('root'))
