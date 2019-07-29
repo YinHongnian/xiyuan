@@ -1,15 +1,14 @@
 import React from 'react';
-import styles from './login.css';
+import {Link} from 'react-router-dom';
+import styles from './login.module.css';
 
 export default class LoginComponent extends React.Component{
   constructor(){
     super()
   }
   render(){
-    // var bgImg = require("../static/img/1.jpg")
     return (
       <div className={styles.logonContainer}>
-        {/* <img src={bgImg} alt="" className={styles.bgImg}/> */}
           <div className={styles.loginForm}>
               <p>
                 <label htmlFor="user">用户名</label>
@@ -21,7 +20,7 @@ export default class LoginComponent extends React.Component{
               </p>
               <div>
                 <button>登录</button>
-                <button>取消</button>
+                <button><Link to="/">取消</Link></button>
                 <a className={styles.forgetPassword}>忘记密码?</a>
               </div>
           </div>

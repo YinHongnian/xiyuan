@@ -30,11 +30,7 @@ module.exports = {
         use:[
           {loader:'style-loader'},
           {
-            loader:'css-loader',
-            options:{
-              modules: true,
-              // localIdentName:'[name]__[local]--[hash:base64:5]'
-            }
+            loader:'css-loader?modules&localIdentName=[name]-[hash:base64:5]'
           }
         ]
       },{
