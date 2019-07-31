@@ -42,7 +42,13 @@ module.exports = {
   resolve:{
     extensions:['*','.js','.jsx','.css']
   },
-  plugins:[],
+  plugins:[
+    new HtmlWebpackPlugin({
+      filename:'index.html',
+      title:'welcome',
+      template:__dirname+'/index.html'
+    })
+  ],
   optimization:{
     minimizer:[
       new UglifyJsPlugin({
